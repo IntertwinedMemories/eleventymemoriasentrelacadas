@@ -1,0 +1,34 @@
+---
+layout: base.njk
+---
+
+<main id="content" class="site-content">
+  <div class="outer">
+    <div class="inner">
+      <div class="grid post-feed">
+        {% for post in collections.blog %}
+          <article class="cell post">
+            <div class="card">
+              <a class="post-thumbnail" href="{{ post.url }}">
+                <img src="{{ post.data.thumb_image }}" alt=""></a>
+                <div class="post-body">
+                  <header class="post-header">
+                    <h2 class="post-title">
+                      <a href="{{ post.url }}">{{ post.data.title }}</a>
+                    </h2>
+                  </header>
+                  <div class="post-excerpt">
+                    <p>{{ post.data.excerpt }}</p>
+                  </div>
+                  <footer class="post-meta">
+                    {% if post.data.date %}
+                      <time class="published" datetime="{{ post.data.date }} 00:00">{{ post.data.date.toLocaleString() }}</time>, by Anna Maria Del Fiorentino</footer>
+                  {% endif %}
+                </div>
+              </div>
+            </article>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
