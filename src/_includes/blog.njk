@@ -6,7 +6,7 @@ layout: base.njk
   <div class="outer">
     <div class="inner">
       <div class="grid post-feed">
-        {% for post in collections.blog %}
+        {% for post in collections.blog | reverse %}
           <article class="cell post">
             <div class="card">
               <a class="post-thumbnail" href="{{ post.url }}">
