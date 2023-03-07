@@ -22,7 +22,7 @@ layout: base.njk
                   </div>
                   <footer class="post-meta">
                     {% if post.data.date %}
-                      <time class="published" datetime="{{ post.data.date }} 00:00">{{ post.data.date.toLocaleString() }}</time>, by Anna Maria Del Fiorentino</footer>
+                      <time class="published" datetime="{{ post.data.date | toISOString }}">{{ post.data.date | formatDate }}</time>, by Anna Maria Del Fiorentino</footer>
                   {% endif %}
                 </div>
               </div>

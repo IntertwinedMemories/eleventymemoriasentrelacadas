@@ -19,7 +19,7 @@ layout: base.njk
       </div>
       <footer class="post-meta">
         {% if date %}
-          <time class="published" datetime="2022-03-08 00:00">{{ date }}</time>, by Anna Maria Del Fiorentino</footer>
+          <time class="published" datetime="{{ date | toISOString }}">{{ date | formatDate }}</time>, by Anna Maria Del Fiorentino</footer>
       {% endif %}
     </article>
   </div>
