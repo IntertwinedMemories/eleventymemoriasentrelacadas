@@ -9,7 +9,7 @@ seo:
 layout: post.njk
 ---
 
-Para comprar o livro, mande um email para <a href="mailto:annadfiorentino@gmail.com">annadfiorentino@gmail.com</a>
+Para comprar o livro em papel, mande um email para <a href="mailto:annadfiorentino@gmail.com">annadfiorentino@gmail.com</a>
 
 Em breve disponível também na Livraria Martins Fontes
 
@@ -17,3 +17,5 @@ Em breve disponível também na Livraria Martins Fontes
  Av. Paulista, 509<br/>
  São Paulo, SP<br/>
  CEP 01311-910
+
+ <a class="button" href="/public/eBook_Memorias_Entrelacadas.pdf">Baixe gratuitamente aqui o livro em pdf</a>
